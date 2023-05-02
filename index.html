@@ -6,8 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas e formulários</title>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        table,td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <table>
+        <thead>
+            <!-- inidica o cabeçalho da tabela para o navegador -->
+            <tr>
+                <th> nome </th>
+                <th> telefone </th>
+                <th> email </th>
+            </tr>
+        </thead>
+            <!-- rowspan aumenta o número de linhas na célula -->
+        <tbody>
+            <tr>
+                <td rowspan="2"> peps </td>
+                <td> peps-peps </td>
+                <td> peps@peps.com </td>
+            </tr>
+            <tr>
+                <td> 11 peps-peps </td>
+                <td> pepspeps@peps.com </td>
+            </tr>
+            <tr>
+                <td> luls </td>
+                <td> luls-luls </td>
+                <td> luls@luls.com </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- colspan aumenta o número de colunas -->
+         <tr>
+                <td colspan="3"> Lista de contatos da fiap </td>
+         </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
