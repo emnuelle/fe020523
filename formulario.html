@@ -29,12 +29,25 @@
     <form action="cadastro" name="cadastro" method="get">
         <fieldset>
             <legend>Dados pessoais</legend>
-        <label for="c-nome">Nome:</label> 
+
+        <label for="c-nome"> Nome:</label> 
         <input type="text" name="nome" id="c-nome"> <br>
+
         <label for="c-email"> e-mail: </label>
         <input type="text" name="email" id="c-email"> <br>
+
+        <label for="c-senha"> Senha </label>
+        <input type="password" name="senha" id="c-senha">
+
+        <fieldset>
+            <legend>Outros</legend>
+            <label for="c-busca"> Busca </label>
+            <input type="url" name="busca" id="c-busca">
+        </fieldset>
+        
         <input type="submit" value="Cadastrar">
         </fieldset>
+
     </form>
 
 </body>
